@@ -53,7 +53,6 @@ class MyForgroundService: Service(){
 
     }
 
-
     @RequiresApi(Build.VERSION_CODES.O)
     private fun createNotificationChannel(notificationManager: NotificationManager): String {
         val channel = NotificationChannel(
@@ -72,7 +71,6 @@ class MyForgroundService: Service(){
         super.onDestroy()
         stopForeground(true)
     }
-
 
     companion object{
         const val CHANNEL_ID = "ForgroundNotificationId"
